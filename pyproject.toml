@@ -2,7 +2,7 @@
 name = "pydesk"
 version = "0.1.0"
 description = "Study case project"
-authors = ["Samuel <fg.samuel@gmail.com>, Isaque <isaquealves@gmail.com>"]
+authors = ["Samuel <fg.samuel@gmail.com>", "Isaque <isaquealves@gmail.com>","Sandro <destromadara@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
@@ -10,8 +10,15 @@ python = "^3.10"
 fastapi = "^0.78.0"
 SQLAlchemy = "^1.4.37"
 asyncpg = "^0.25.0"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
 
 [tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+black = "^22.3.0"
+isort = "^5.10.1"
+mypy = "^0.961"
+flake8 = "^4.0.1"
+mccabe = "0.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
